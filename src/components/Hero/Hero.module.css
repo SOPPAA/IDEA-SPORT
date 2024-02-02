@@ -1,0 +1,86 @@
+.hero_wrapper {
+    height: 500px;
+    overflow: hidden;
+
+    & .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        
+    }
+
+    & .hero_con {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 115px;
+        /* outline: 1px solid red; */
+        
+        & .text_1 {
+            font-size: 32px;
+        }
+
+        & .text_2 {
+            font-size: 64px;
+            font-weight: bold;
+            color: #3ACD52;
+        }
+
+        & .text_3 {
+            font-size: 32px;
+        }
+
+        & .text_4 {
+            font-size: 16px;
+            margin-top: 25px;
+        }
+
+        & .hero_social {
+            display: flex;
+            list-style: none;
+            margin-top: 25px;
+
+            & li {
+                margin-right: 10px;
+
+                & svg {
+                    width: 32px;
+                    height: 32px;
+                    color: #333;
+                }
+            }
+        }
+
+        & .hero_img {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-image: url('https://scontent.fhdy4-1.fna.fbcdn.net/v/t1.6435-9/39868993_102608144024765_2366004888166465536_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeFcH3Oq4Cw5FCFa7_3yYBYwNSyVZPRBxOs1LJVk9EHE6y2Xj_IBE3qPnHEbmQ0fftiT-bBkILvGcY-kA8flmXv1&_nc_ohc=IYUcDi5EhQkAX-sxKxG&_nc_ht=scontent.fhdy4-1.fna&cb_e2o_trans=q&oh=00_AfB-nmxFTlVAq-3LclJsvAT8Mxa17szLYEgCtkOKEFWBFA&oe=65E2C0C1');
+            background-size: cover;
+            background-position: center;
+            /* margin-right: 20px; */
+            /* outline: 1px solid red; */
+            
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero_wrapper{
+        height: auto;
+
+        & .hero_con {
+            flex-direction: column;
+            margin:  50px 0 ;
+            padding: 20px;
+            
+            & .hero_info, &.hero_img {
+                width: 100%;
+            }
+
+            & .hero_info {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
